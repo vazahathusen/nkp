@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfumes | Maison Ambre Perfumes</title>
+<style>
+  :root{--ink:#241628;--plum:#3b2340;--rose:#e8c6d0;--amber:#c98a2b;--mist:#f7f3f5;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,"Palatino Linotype",serif;line-height:1.7;color:var(--ink);background:var(--mist)}
+  a{color:inherit}
+  header{background:var(--plum);color:var(--mist);padding:18px 6%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+  .logo{font-size:1.5rem;text-decoration:none;letter-spacing:.04em}
+  nav a{margin-left:22px;text-decoration:none;padding-bottom:3px}
+  nav a:hover,nav a.active{border-bottom:2px solid var(--amber)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+  .hero{background:var(--plum);color:var(--mist);padding:70px 6%;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px}
+  .hero-text{max-width:520px}
+  .hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:16px;font-weight:normal}
+  .hero p{margin-bottom:26px;color:var(--rose)}
+  .btn{display:inline-block;background:var(--amber);color:var(--ink);padding:12px 28px;text-decoration:none;border:0;font:inherit;cursor:pointer;border-radius:2px}
+  .btn:hover{background:var(--rose)}
+  /* bottle drawn with CSS */
+  .bottle{width:150px;margin:0 auto}
+  .bottle .cap{width:46px;height:44px;background:var(--amber);margin:0 auto;border-radius:3px 3px 0 0}
+  .bottle .neck{width:30px;height:16px;background:var(--rose);margin:0 auto;opacity:.8}
+  .bottle .glass{width:150px;height:190px;background:linear-gradient(135deg,var(--rose),#b98fa0);border-radius:18px;position:relative}
+  .bottle .label{position:absolute;left:25px;right:25px;top:70px;height:56px;background:var(--mist);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--plum);border-radius:2px}
+  main{padding:60px 6%;max-width:1100px;margin:0 auto}
+  h2{font-size:1.9rem;font-weight:normal;margin-bottom:12px;color:var(--plum)}
+  .lead{max-width:60ch;margin-bottom:34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+  .card{background:var(--white);border-top:4px solid var(--rose);padding:26px}
+  .card h3{font-weight:normal;font-size:1.25rem;color:var(--plum)}
+  .notes{font-size:.95rem;color:#6a5a6d;margin:6px 0 12px}
+  .price{color:var(--amber);font-size:1.15rem}
+  .card.feature{border-top-color:var(--amber)}
+  section+section{margin-top:60px}
+  ul.plain{list-style:none}
+  ul.plain li{padding:8px 0;border-bottom:1px solid var(--rose)}
+  form{display:grid;gap:16px;max-width:520px}
+  label{display:grid;gap:4px}
+  input,textarea,select{font:inherit;padding:10px;border:1px solid #c9b6cd;background:var(--white)}
+  footer{background:var(--ink);color:var(--rose);text-align:center;padding:26px 6%;font-size:.9rem}
+  @media (max-width:600px){.hero h1{font-size:2.1rem}nav a{margin:0 16px 0 0}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="index.html">Maison Ambre</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html" class="active">Perfumes</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h2>Our perfumes</h2>
+<p class="lead">Each perfume comes in a 50 ml bottle. Prices include tax.</p>
+<section>
+<h2>Floral</h2>
+<div class="grid">
+<div class="card"><h3>Velvet Rose</h3><p class="notes">Damask rose, musk, vanilla</p><p class="price">₹3,499</p></div>
+<div class="card"><h3>White Jasmine</h3><p class="notes">Jasmine, tuberose, pear</p><p class="price">₹3,199</p></div>
+<div class="card"><h3>Peony Dew</h3><p class="notes">Peony, lily, soft cedar</p><p class="price">₹2,999</p></div>
+</div>
+</section>
+<section>
+<h2>Woody and spicy</h2>
+<div class="grid">
+<div class="card"><h3>Amber Night</h3><p class="notes">Amber, oud, cinnamon</p><p class="price">₹4,299</p></div>
+<div class="card"><h3>Sandal Smoke</h3><p class="notes">Sandalwood, incense, leather</p><p class="price">₹3,899</p></div>
+<div class="card"><h3>Cedar &amp; Clove</h3><p class="notes">Cedar, clove, black pepper</p><p class="price">₹3,299</p></div>
+</div>
+</section>
+<section>
+<h2>Fresh</h2>
+<div class="grid">
+<div class="card"><h3>Citrus Morning</h3><p class="notes">Bergamot, neroli, green tea</p><p class="price">₹2,799</p></div>
+<div class="card"><h3>Sea Salt</h3><p class="notes">Sea salt, driftwood, lemon</p><p class="price">₹2,899</p></div>
+<div class="card"><h3>Mint Garden</h3><p class="notes">Mint, basil, cucumber</p><p class="price">₹2,699</p></div>
+</div>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Maison Ambre Perfumes. Open daily, 10 am to 8 pm.</p>
+</footer>
+</body>
+</html>

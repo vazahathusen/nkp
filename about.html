@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Maison Ambre Perfumes</title>
+<style>
+  :root{--ink:#241628;--plum:#3b2340;--rose:#e8c6d0;--amber:#c98a2b;--mist:#f7f3f5;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,"Palatino Linotype",serif;line-height:1.7;color:var(--ink);background:var(--mist)}
+  a{color:inherit}
+  header{background:var(--plum);color:var(--mist);padding:18px 6%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+  .logo{font-size:1.5rem;text-decoration:none;letter-spacing:.04em}
+  nav a{margin-left:22px;text-decoration:none;padding-bottom:3px}
+  nav a:hover,nav a.active{border-bottom:2px solid var(--amber)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+  .hero{background:var(--plum);color:var(--mist);padding:70px 6%;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px}
+  .hero-text{max-width:520px}
+  .hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:16px;font-weight:normal}
+  .hero p{margin-bottom:26px;color:var(--rose)}
+  .btn{display:inline-block;background:var(--amber);color:var(--ink);padding:12px 28px;text-decoration:none;border:0;font:inherit;cursor:pointer;border-radius:2px}
+  .btn:hover{background:var(--rose)}
+  /* bottle drawn with CSS */
+  .bottle{width:150px;margin:0 auto}
+  .bottle .cap{width:46px;height:44px;background:var(--amber);margin:0 auto;border-radius:3px 3px 0 0}
+  .bottle .neck{width:30px;height:16px;background:var(--rose);margin:0 auto;opacity:.8}
+  .bottle .glass{width:150px;height:190px;background:linear-gradient(135deg,var(--rose),#b98fa0);border-radius:18px;position:relative}
+  .bottle .label{position:absolute;left:25px;right:25px;top:70px;height:56px;background:var(--mist);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--plum);border-radius:2px}
+  main{padding:60px 6%;max-width:1100px;margin:0 auto}
+  h2{font-size:1.9rem;font-weight:normal;margin-bottom:12px;color:var(--plum)}
+  .lead{max-width:60ch;margin-bottom:34px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+  .card{background:var(--white);border-top:4px solid var(--rose);padding:26px}
+  .card h3{font-weight:normal;font-size:1.25rem;color:var(--plum)}
+  .notes{font-size:.95rem;color:#6a5a6d;margin:6px 0 12px}
+  .price{color:var(--amber);font-size:1.15rem}
+  .card.feature{border-top-color:var(--amber)}
+  section+section{margin-top:60px}
+  ul.plain{list-style:none}
+  ul.plain li{padding:8px 0;border-bottom:1px solid var(--rose)}
+  form{display:grid;gap:16px;max-width:520px}
+  label{display:grid;gap:4px}
+  input,textarea,select{font:inherit;padding:10px;border:1px solid #c9b6cd;background:var(--white)}
+  footer{background:var(--ink);color:var(--rose);text-align:center;padding:26px 6%;font-size:.9rem}
+  @media (max-width:600px){.hero h1{font-size:2.1rem}nav a{margin:0 16px 0 0}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="index.html">Maison Ambre</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Perfumes</a>
+<a href="about.html" class="active">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>About Maison Ambre</h2>
+<p class="lead">We opened in 2014 with one counter and twelve perfumes. Today we blend more than thirty, all made in small batches so every bottle is fresh.</p>
+</section>
+<section>
+<h2>How we work</h2>
+<div class="grid">
+<div class="card"><h3>Honest ingredients</h3><p class="notes">We list every note on the box, so you know what you are wearing.</p></div>
+<div class="card"><h3>Slow blending</h3><p class="notes">Each batch rests for four weeks before it goes on sale.</p></div>
+<div class="card"><h3>Try first</h3><p class="notes">Test any perfume at the counter. Come back if it is not right.</p></div>
+</div>
+</section>
+<section>
+<h2>Visit the shop</h2>
+<p>12 Perfumers Lane, Ahmedabad, Gujarat<br>Open daily, 10 am to 8 pm</p>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Maison Ambre Perfumes. Open daily, 10 am to 8 pm.</p>
+</footer>
+</body>
+</html>
